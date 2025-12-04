@@ -12,18 +12,10 @@ maya uwaydat\
 + duckdb/sql: i needed a more permanent place to store data that i fetched from api calls so i wouldn't have to re-fetch everything any time i had to go back and re-edit my code. duckdb provided this structure. 
 + vader: vader is a sentiment analysis tool specialised for social media posts, but it has been used for news articles as well. further insight: [analysis of vader vs. textblob](https://jds-online.org/journal/JDS/article/1441/info)
 #### data
-the data was fetched from the nyt developer api. the 'raw data' included in this project is: 
-  + date the article was published;
-  + the article headline (its title - which is what would likely grab people's attention first)
-  + the article's snippet (the small piece of text right under the header giving a brief description of what the full article is about)  
-ALL new york times articles from 1924 to 2024 released in january or june were included in the study. 1928 was the year of the first television broadcast ([source](https://education.cfr.org/media/history-communications)), so including the last century's worth of data made sense for interpretability's sake.  
-the article headline and article snippet were fed into a vader sentiment analyser to give us:
-  + the vader sentiment score for the headline of each article
-  + the vader sentiment score for the snippet of each article  
-the final data table included:
-  + year and month (as a timestamp) 
-  + average sentiment score for headlines for a given month
-  + average sentiment scores for snippets for a given month
++ the data was fetched from the nyt developer api. the 'raw data' included in this project include the date the article was published, the article's headline, and the article's snippet (the small piece of text right under the header giving a brief description of what the full article is about). 
++ ALL new york times articles from 1924 to 2024 released in january or june were included in the study. 1928 was the year of the first television broadcast ([source](https://education.cfr.org/media/history-communications)), so including the last century's worth of data made sense for interpretability's sake.  
++ the article headline and article snippet were fed into a vader sentiment analyser to give us a) the vader sentiment score for the headline of each article, and b) the vader sentiment score for the snippet of each article. 
++ the final data table included: year and month (as a timestamp), average sentiment score for headlines for each given time period, average sentiment scores for snippets for each given time period. 
 #### limitations
 + this study uses *only* the new york times and its api. at first, i was considering looking at the top 3 newspapers (nyt, wsj and wp); however, the washington post does not have an api. the new york times was chosen for easy use of its api, its long history, and the fact that it is the [number one most-subscribed newspaper](https://en.wikipedia.org/wiki/List_of_newspapers_in_the_United_States) in the united states. a more comprehensive analysis would have taken into account *multiple* different newspaper outlets, television, podcasts, and other media. a project of that scale is something for future me, maybe.\
 + i also did not use the full articles; the headlines and the snippets are used as a proxy for "the sensationalisation of news." while they *are* indeed what is competing most for viewers' attention, the actual contents of the news might still use fairly neutral language.
