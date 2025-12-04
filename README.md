@@ -15,11 +15,11 @@ maya uwaydat\
 the data was fetched from the nyt developer api. the 'raw data' included in this project is: 
 + date the article was published;
 + the article headline (its title - which is what would likely grab people's attention first)
-+ the article's snippet (the small piece of text right under the header giving a brief description of what the full article is about)\n
-ALL new york times articles from 1924 to 2024 released in january or june were included in the study. 1928 was the year of the first television broadcast ([source](https://education.cfr.org/media/history-communications)), so including the last century's worth of data made sense for interpretability's sake.\n
++ the article's snippet (the small piece of text right under the header giving a brief description of what the full article is about)  
+ALL new york times articles from 1924 to 2024 released in january or june were included in the study. 1928 was the year of the first television broadcast ([source](https://education.cfr.org/media/history-communications)), so including the last century's worth of data made sense for interpretability's sake.  
 the article headline and article snippet were fed into a vader sentiment analyser to give us:
 + the vader sentiment score for the headline of each article
-+ the vader sentiment score for the snippet of each article
++ the vader sentiment score for the snippet of each article  
 the final data table included:
 + year and month (as a timestamp) 
 + average sentiment score for headlines for a given month
