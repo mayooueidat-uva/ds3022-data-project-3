@@ -18,3 +18,5 @@ Running this pipeline is quite simple; the entire pipeline is condensed into one
 + pandas dataframes: for easy storage of data from the api before transformation.
 + duckdb/sql: i needed a more permanent place to store data that i fetched from api calls so i wouldn't have to re-fetch everything any time i had to go back and re-edit my code. duckdb provided this structure. 
 + vader: vader is a sentiment analysis tool specialised for social media posts, but it has been used for news articles as well. further insight: [analysis of vader vs. textblob](https://jds-online.org/journal/JDS/article/1441/info)
+#### findings and results 
+![nyt_sentiment_graph](https://raw.githubusercontent.com/mayooueidat-uva/ds3022-data-project-3/refs/heads/main/nyt_sentiment_plot.png)
