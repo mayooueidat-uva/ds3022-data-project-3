@@ -1,9 +1,0 @@
-"meaningful ideas" 
-- there's some survey data from last year's ML class about how "meaningful" people felt in their careers...maybe something correlating that with income or smthn
-- wikipedia topics and how those correlate with the quality of wikipedia articles (this is more 'fun' but it's pretty revealing with regards to what people care about.) 
-- sentiment analysis of newspaper articles from one news outlet over time. demonstrating polarisation or? 
-
-"fun" ideas: 
-- seeing when i send messages on a certain platform? 
-- is this the time for me to cop my friend's LC play data? because i've wanted to. i'm so excited to see her fail. 
-- maybe it's time to put anjunadats into motion. (genre tags and such? scraping the spotify api) 
