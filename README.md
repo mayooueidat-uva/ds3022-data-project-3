@@ -1,5 +1,5 @@
-# dp3-project3-code-repo
-## how sensational!: using sentiment analysis to investigate correlations between development of communications technology, and the sensationalisation of news 
+# how sensational!
+## using sentiment analysis to investigate correlations between development of communications technology, and the sensationalisation of news 
 maya uwaydat\
 [link to code repo](https://github.com/mayooueidat-uva/dp3-project3-code-repo)
 #### about 
